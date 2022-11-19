@@ -9,6 +9,11 @@ import { NavComponent } from './navigation/nav/nav.component';
 import { FooterComponent } from './navigation/footer/footer.component';
 import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+
 
 @NgModule({
   declarations: [
@@ -21,6 +26,10 @@ import { SidebarComponent } from './navigation/sidebar/sidebar.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatExpansionModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

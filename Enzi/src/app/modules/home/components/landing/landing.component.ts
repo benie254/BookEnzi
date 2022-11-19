@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing.component.less']
 })
 export class LandingComponent implements OnInit {
+  panelOpenState = false;
 
   constructor() { }
 
