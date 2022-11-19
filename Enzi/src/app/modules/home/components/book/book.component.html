@@ -1,3 +1,237 @@
-<div class="container-fluid">
+    
+    <mat-drawer-container class="example-container">
+  <mat-drawer #drawer style="height:600px;margin-top:2.5%;width:450px;">
+    
+    <div class="shadow card text-bg-info mb-3" >
+        <div class="card-header"><i class="fa-solid fa-map-pin"></i>&nbsp;Find a Taxi</div>
+        <div class="card-body">
+          <h5 class="card-title">Do you need to get somewhere quick?</h5>
+          <p class="card-text">Here are nearby taxi options:</p>
+          <button class="btn"><i class="fa-brands fa-uber"></i>Uber</button>&nbsp;<button class="btn"><i class="fa-solid fa-taxi"></i>Taxify</button>
+        </div>
+      </div>
+      <div class="shadow card text-bg-info mb-3">
+        <div class="card-header"><i class="fa-solid fa-basket-shopping"></i>&nbsp;Go Shopping</div>
+        <div class="card-body">
+          <h5 class="card-title">Do you need to do some shopping?</h5>
+          <p class="card-text">Here are nearby market options:</p>
+          <button class="btn"><i class="fa-solid fa-cart-shopping"></i>The Mall</button>&nbsp;<button class="btn"><i class="fa-solid fa-shop"></i>Village Market</button>
+        </div>
+      </div>
+      <div class="shadow card text-bg-danger mb-3" >
+        <div class="card-header"><i class="fa-solid fa-truck-medical"></i>&nbsp;Health Emergency?</div>
+        <div class="card-body">
+          <h5 class="card-title">If you or someone you know feel(s) unwell...</h5>
+          <p class="card-text">Here are nearby hospitals:</p>
+          <button class="btn"><i class="fa-solid fa-hospital"></i>The Hospice</button>&nbsp;<button class="btn"><i class="fa-regular fa-hospital"></i>Tender Care</button>
+        </div>
+      </div>
+      
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="container-fluid">
 
+    <div class="row">
+        <div class="col-lg-8">
+            <br><br>
+            <div class="card mb-3" style="max-width: 1020px;height:420px;">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item">
+                        <h5 class="nav-link active" aria-current="true"><strong>$500 | 50,000 Kes</strong></h5>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" type="button" mat-raised-button (click)="drawer.toggle()">Resources</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled"><i class="fa-solid fa-star"></i> 4.5</a>
+                      </li>
+                    </ul>
+                  </div>
+                <div class="row g-0">
+                  <div class="col-md-5">
+                    <img src="https://res.cloudinary.com/benie/image/upload/v1668843707/bed-ga4a159849_640_fhyfaq.jpg" class="img-fluid rounded-start" alt="..." style="max-height:360px;">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body" id="details">
+                        <br><br><br>
+                      <h5 class="card-title">1 Bedroom</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ullam! Sit nostrum explicabo est culpa harum commodi sed quos, repellendus deleniti sequi magni provident adipisci perspiciatis voluptates temporibus, magnam earum.</p>
+                      <p class="card-text"><small class="text-muted">Status: Available</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                    <div class="card text-bg-dark">
+                        <span class="padding-xsm shadow">Bathroom</span>
+                        <div id="carouselExampleDarkA" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDarkA" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDarkA" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDarkA" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="https://res.cloudinary.com/benie/image/upload/v1668843820/bathroom-gb5800a5ee_640_okxghl.jpg" class="d-block w-100" alt="..." height="220">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="https://res.cloudinary.com/benie/image/upload/v1668843817/modern-minimalist-bathroom-g55309bc18_640_xxyv0n.jpg" class="d-block w-100" alt="..." height="220">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://res.cloudinary.com/benie/image/upload/v1668843815/bathroom-g0a04f9cc5_640_c6boev.jpg" class="d-block w-100" alt="..." height="220">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDarkA" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDarkA" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-bg-dark">
+                        <span class="padding-xsm shadow">Living room</span>
+                        <div id="carouselExampleDarkB" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDarkB" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDarkB" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDarkB" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="https://res.cloudinary.com/benie/image/upload/v1668843555/living-room-g6a3e21cdc_640_orf6jd.jpg" class="d-block w-100" alt="..." height="220">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="https://res.cloudinary.com/benie/image/upload/v1668843591/furniture-g2748c229d_640_yeupwh.jpg" class="d-block w-100" alt="..." height="220">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://res.cloudinary.com/benie/image/upload/v1668843559/living-room-g54301f7d2_640_siw0de.jpg" class="d-block w-100" alt="..." height="220">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDarkB" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDarkB" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>  
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <div class="card text-bg-dark">
+                        <span class="padding-xsm shadow">Bedroom</span>
+                        <div id="carouselExampleDarkC" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDarkC" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDarkC" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDarkC" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="https://res.cloudinary.com/benie/image/upload/v1668843703/bedroom-g092c835c4_640_q51xtv.jpg" class="d-block w-100" alt="..." height="220">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="https://res.cloudinary.com/benie/image/upload/v1668843707/bed-ga4a159849_640_fhyfaq.jpg" class="d-block w-100" alt="..." height="220">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://res.cloudinary.com/benie/image/upload/v1668843705/reside-g366cfcea3_640_l7ulxp.jpg" class="d-block w-100" alt="..." height="220">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDarkC" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDarkC" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+              </div>
+              <br><br><br><br><br><br><br>
+        </div>
+        
+        <div class="col-lg-4">
+            <br><br><br><br><br><br><br><br>
+            <h1 class="text-center">Booking Form</h1>
+            <form #bookingForm="ngForm" (ngSubmit)="book(bookingForm.value)" class=" bg-light padding-sm text-center shadow">
+                <mat-form-field appearance="outline" class="rounded bg shadow w-100" style="margin-top:5%;">
+                  <mat-label>Full Name</mat-label>
+                  <input  matInput placeholder="Full Name" name="name" #name="ngModel" ngModel type="text" required>
+                  <mat-icon matSuffix></mat-icon>
+                  <mat-hint>e.g <strong>John Doe</strong></mat-hint>
+                  <mat-error *ngIf="name.hasError('required') || name.pristine">
+                    Name is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field><br>
+                <mat-form-field appearance="outline" class="rounded bg  w-100 shadow" style="margin-top:5%;">
+                  <mat-label>Email</mat-label>
+                  <input matInput placeholder="Email" name="email" #email="ngModel" ngModel type="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                  <mat-icon matSuffix></mat-icon>
+                  <mat-hint>e.g <strong>username@provider.com</strong></mat-hint>
+                  <mat-error *ngIf="email.hasError('pattern')">
+                    Please enter a <strong>valid email address</strong>
+                  </mat-error>
+                  <mat-error *ngIf="email.hasError('required') || email.pristine">
+                    Email is <strong>required</strong>
+                  </mat-error>
+                </mat-form-field><br>
+                <mat-form-field appearance="outline" class="rounded bg w-100 shadow" style="margin-top:5%;">
+                    <mat-label>Check-in Date</mat-label>
+                    <input matInput placeholder="Start date" type="date" ngModel name="checkin_date" #checkin_date="ngModel">     
+                                   <mat-hint>DD/MM/YYYY</mat-hint>
+                                  <mat-error *ngIf="checkin_date.hasError('required') || checkin_date.pristine">
+                                    Check-in Date is <strong>required</strong>
+                                  </mat-error>
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="rounded bg w-100 shadow" style="margin-top:5%;">
+                    <mat-label>Check-out Date</mat-label>
+                      <input matInput placeholder="End date" type="date" ngModel name="checkout_date" #checkout_date="ngModel">
+                    <mat-hint>DD/MM/YYYY</mat-hint>
+                    <mat-error *ngIf="checkout_date.hasError('required') || email.pristine">
+                      Check-out Date is <strong>required</strong>
+                    </mat-error>
+                  </mat-form-field>
+                  
+                  
+                  
+                
+                
+                    <br><br>
+                    
+                  <span><small><mat-checkbox name="policy" #policy="ngModel" ngModel required class="bg">I agree to the Privacy Policy and Terms of Service  <br> <a routerLink="/privacy/policy/TOS">Read more</a></mat-checkbox></small></span>
+                  <br>
+                  <span [hidden]="policy.valid || policy.pristine">
+                    <small class="light bg-danger">You must agree to the Privacy Policy & TOS <strong>to continue</strong></small>
+                  </span>
+                  <br>
+                 
+                <button type="submit" class="btn btn-md btn-light btn-outline-primary" [disabled]="bookingForm.invalid"><i class="fa-solid fa-thumbs-up"></i> Book This For Me</button>
+                <br><br>
+                    
+                 
+            
+                
+                  
+                  
+                  
+            </form>
+            <br><br><br>
+        </div>
+    </div>
+    
 </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+    

@@ -12,7 +12,32 @@ import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { PolicyComponent } from './components/policy/policy.component';
+import { RecaptchaV3Module, RECAPTCHA_V3_SITE_KEY } from 'ng-recaptcha';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule, MAT_DATE_FORMATS } from '@angular/material/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import * as Notiflix from 'notiflix';
+import {
+  MAT_MOMENT_DATE_FORMATS,
+  MomentDateAdapter,
+  MAT_MOMENT_DATE_ADAPTER_OPTIONS,
+  MomentDateModule,
+} from '@angular/material-moment-adapter';
 
+
+export const MY_DATE_FORMATS = {
+  parse: {
+    dateInput: 'YYYY-MM-DD',
+  },
+  display: {
+    dateInput: 'YYYY-MM-DD',
+    monthYearLabel: 'YYYY MM',
+    dateA11yLabel: 'LL',
+    monthYearA11yLabel: 'YYYY MM'
+  },
+};
 
 
 @NgModule({
@@ -21,6 +46,7 @@ import { MatInputModule } from '@angular/material/input';
     NavComponent,
     FooterComponent,
     SidebarComponent,
+    PolicyComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,8 +56,18 @@ import { MatInputModule } from '@angular/material/input';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatCheckboxModule,
+    RecaptchaV3Module,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSidenavModule,
+    MomentDateModule
+    
   ],
-  providers: [],
+  providers: [
+    { provide: RECAPTCHA_V3_SITE_KEY, useValue: "6LfH_gUjAAAAAOuCtWb9UBXc30lXkov6Yufu76B5" },
+    {provide: MY_DATE_FORMATS, useValue: MY_DATE_FORMATS},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
