@@ -26,6 +26,28 @@ import {
   MomentDateModule,
 } from '@angular/material-moment-adapter';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA1ya6es7h1WTumEqqfOzAnGhYHbq0nUO4",
+  authDomain: "bookennzi.firebaseapp.com",
+  projectId: "bookennzi",
+  storageBucket: "bookennzi.appspot.com",
+  messagingSenderId: "136240064355",
+  appId: "1:136240064355:web:14bd32837574e3aac1d556",
+  measurementId: "G-L3ZRRW5R7N"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 
 export const MY_DATE_FORMATS = {
   parse: {

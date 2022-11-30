@@ -16,6 +16,7 @@ export class BookingConfirmedComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.confirmation();
   }
   confirmation(){
     Notiflix.Confirm.show(

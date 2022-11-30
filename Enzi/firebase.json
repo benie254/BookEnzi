@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "book-in-nai",
+    "public": "dist/enzi",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
