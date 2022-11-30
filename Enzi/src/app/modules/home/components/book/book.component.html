@@ -189,17 +189,17 @@
                 </mat-form-field><br>
                 <mat-form-field appearance="outline" class="rounded bg w-100 shadow" style="margin-top:5%;">
                     <mat-label>Check-in Date</mat-label>
-                    <input matInput placeholder="Start date" type="date" ngModel name="checkin_date" #checkin_date="ngModel">     
+                    <input matInput placeholder="Start date" type="date" ngModel name="checkin" #checkin="ngModel">     
                                    <mat-hint>DD/MM/YYYY</mat-hint>
-                                  <mat-error *ngIf="checkin_date.hasError('required') || checkin_date.pristine">
+                                  <mat-error *ngIf="checkin.hasError('required') || checkin.pristine">
                                     Check-in Date is <strong>required</strong>
                                   </mat-error>
                   </mat-form-field>
                   <mat-form-field appearance="outline" class="rounded bg w-100 shadow" style="margin-top:5%;">
                     <mat-label>Check-out Date</mat-label>
-                      <input matInput placeholder="End date" type="date" ngModel name="checkout_date" #checkout_date="ngModel">
+                      <input matInput placeholder="End date" type="date" ngModel name="checkout" #checkout="ngModel">
                     <mat-hint>DD/MM/YYYY</mat-hint>
-                    <mat-error *ngIf="checkout_date.hasError('required') || email.pristine">
+                    <mat-error *ngIf="checkout.hasError('required') || checkout.pristine">
                       Check-out Date is <strong>required</strong>
                     </mat-error>
                   </mat-form-field>
