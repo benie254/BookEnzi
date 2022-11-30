@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 // const apiURL = 'http://127.0.0.1:8000/api/'
-const apiURL = 'https://web-production-7777.up.railway.app/api/book/unit/'
+const apiURL = 'https://web-production-7777.up.railway.app/api/'
 
 @Injectable({
   providedIn: 'any'
